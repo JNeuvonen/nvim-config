@@ -40,7 +40,6 @@ local default_plugins = {
       }
     end,
   },
-
   {
     "NvChad/nvim-colorizer.lua",
     init = function()
