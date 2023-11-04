@@ -193,13 +193,6 @@ M.lspconfig = {
       "LSP references",
     },
 
-    ["<leader>f"] = {
-      function()
-        vim.diagnostic.open_float { border = "rounded" }
-      end,
-      "Floating diagnostic",
-    },
-
     ["[d"] = {
       function()
         vim.diagnostic.goto_prev { float = { border = "rounded" } }
@@ -273,6 +266,7 @@ M.telescope = {
     ["<leader>ff"] = { "<cmd> Telescope find_files <CR>", "Find files" },
     ["<leader>fa"] = { "<cmd> Telescope find_files follow=true no_ignore=true hidden=true <CR>", "Find all" },
     ["<leader>fw"] = { "<cmd> Telescope live_grep <CR>", "Live grep" },
+    ["<leader>fs"] = { "<cmd> Telescope lsp_document_symbols <CR>", "Find symbols from document" },
     ["<leader>fb"] = { "<cmd> Telescope buffers <CR>", "Find buffers" },
     ["<leader>fh"] = { "<cmd> Telescope help_tags <CR>", "Help page" },
     ["<leader>fo"] = { "<cmd> Telescope oldfiles <CR>", "Find oldfiles" },
