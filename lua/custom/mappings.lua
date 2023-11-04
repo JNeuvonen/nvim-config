@@ -33,6 +33,10 @@ M.dap = {
       "<cmd> DapContinue <CR>",
       "Start or continue the debugger",
     },
+    ["<leader>dc"] = {
+      "<Cmd>lua require'dap'.clear_breakpoints()<CR>",
+      "Clear all breakpoints",
+    },
   },
 }
 
