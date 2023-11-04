@@ -1,1 +1,1 @@
-Nvim config expanded from nvchad base config.
+Nvim config expanded from the popular nvchad base config.
