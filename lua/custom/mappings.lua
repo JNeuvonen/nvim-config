@@ -5,6 +5,17 @@ M.general = {
   n = {
     [";"] = { ":", "enter command mode", opts = { nowait = true } },
     ["<leader>dq"] = { "<cmd>lua vim.diagnostic.setqflist()<CR>", "populate quickfix with diagnostics", opts = { noremap = true, silent = true } },
+    ["<leader>dw"] = {
+      "<cmd>lua vim.diagnostic.setloclist()<CR>",
+      "populate quickfix with buffer diagnostics",
+      opts = { noremap = true, silent = true },
+    },
+    ["<leader>qh"] = {
+      function()
+        require("nvterm.terminal").new "float"
+      end,
+      "New floating term",
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
