@@ -65,6 +65,17 @@ M.gopher = {
 }
 
 
+M.nvimtree = {
+  plugin = true,
+  n = {
+    ["<leader>qr"] = {
+      "<cmd>NvimTreeCollapse<CR>",
+      "Collapse all directories in NvimTree",
+      opts = { noremap = true, silent = true },
+    },
+  },
+}
+
 -- more keybinds!
 
 return M
