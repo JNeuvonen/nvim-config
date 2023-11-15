@@ -10,12 +10,11 @@ M.general = {
       "populate quickfix with buffer diagnostics",
       opts = { noremap = true, silent = true },
     },
-    ["<leader>qh"] = {
-      function()
-        require("nvterm.terminal").new "float"
-      end,
-      "New floating term",
-    },
+    ["<leader>qq"] = {
+      "<cmd>cclose<CR><cmd>lclose<CR><cmd>wincmd p<CR>",
+      "close quickfix window",
+      opts = { noremap = true, silent = true},
+    }
   },
   v = {
     [">"] = { ">gv", "indent" },
